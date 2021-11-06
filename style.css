@@ -1,0 +1,358 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap');
+
+:root {
+    --text: #699acc;
+    --text-white: #e6e6e6;
+    --text-black: #2e2e2e;
+    --text-ban-red: #E84241;
+    --text-ban-green: #62e841;
+    --text-ban-default: #e7e7e7;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+    background: url('img/media/wallpaper.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    height: 100%;
+}
+
+body {
+	line-height: 1;
+    font-family: 'Port Lligat Sans', sans-serif;
+}
+
+.bg-header {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+.liga-header {
+    width: 100%;
+    height: 100%;
+
+    padding: 20px 0 20px 0;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row {
+    width: 100%;
+    margin: 6px;
+
+    position: relative;
+}
+
+.liga-img  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.liga-img > img {
+    width: 120px;
+    height: 120px;
+}
+
+.liga-context {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.items-flex-center {
+    align-items: center;
+}
+
+    .items-flex-start {
+        align-items: flex-start;
+    }
+
+        .items-flex-end {
+            align-items: flex-end;
+        }
+
+.liga-context h1 {
+    color: var(--text-white);
+
+    font-size: xx-large;
+    font-weight: bold;
+}    
+
+.liga-context a {
+    text-decoration: none;
+    color: var(--text-white);
+}
+
+.liga-context a > h1 {
+    color: var(--text-white);
+}
+
+.liga-context i {
+    font-size: large;
+
+    color: var(--text);
+}    
+
+.liga-context i a {
+    text-decoration: none;
+    color: black;
+
+    color: var(--text-white);
+}
+
+.liga-maps {
+    width: 100%;
+    height: 100%;
+
+    padding: 20px 0 20px 0;
+}
+
+.liga-maps-img {
+    width: 100%;
+    height: 400px;
+
+    position: relative;
+    border-radius: 10px;
+}
+
+.liga-maps-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60% 10%;
+    border-radius: 10px;
+}
+
+.liga-flex-red {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: rgb(232,66,65);
+    background: linear-gradient(0deg, rgba(232,66,65,1) 0%, rgba(23,23,23,0.5) 50%, rgba(23,23,23,0.8) 100%);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+    .liga-flex-green {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background: rgb(98,232,65);
+        background: linear-gradient(0deg, rgba(98,232,65,1) 0%, rgba(23,23,23,0.5) 50%, rgba(23,23,23,0.8) 100%);
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+        .liga-flex-default {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            background: rgb(231,231,231);
+            background: linear-gradient(0deg, rgba(231,231,231,1) 0%, rgba(23,23,23,0.5) 50%, rgba(23,23,23,0.8) 100%);
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+    .liga-flex-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .list-map {
+        width: 100%;
+        height: 140px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list-map h1 {
+        font-size: large;
+        font-weight: bold;
+    
+        color: var(--text-white);
+        text-shadow: 0 0 3px var(--text-black), 0 0 5px var(--text-white);
+    }
+
+        .list-map > img {
+            max-width: 70px;
+            max-height: 70px;
+            width: 100%;
+            height: 100%;
+            padding: 10px 0 10px 0;
+        }
+
+.list-klan {
+    width: 100%;
+    height: 190px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-klan > img {
+    max-width: 90px;
+    max-height: 90px;
+    width: 100%;
+    height: 100%;
+}
+
+.list-ban {
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}    
+
+    .list-ban span {
+        font-size: large;
+        font-weight: bold;
+    
+        color: var(--text-white);
+        text-shadow: 0 0 3px var(--text-black), 0 0 5px var(--text-white);
+    }
+
+
+.list-ban-color-default {
+    background-color: var(--text-ban-default);
+    width: 100%;
+    height: 10px;
+}
+
+    .list-ban-color-red {
+        background-color: var(--text-ban-red);
+        width: 100%;
+        height: 10px;
+    }
+
+    .list-ban-color-green {
+        background-color: var(--text-ban-green);
+        width: 100%;
+        height: 10px;
+    }
+
+.liga-footer {
+    width: 100%;
+    height: 100%;
+
+    padding: 20px 0 20px 0;
+}
+
+.sponsor {
+    display: flex;
+    justify-content: center;
+}
+
+    .sponsor > a {
+        text-decoration: none;
+    }
+
+    .sponsor > a img {
+        max-width: 160px;
+        width: auto;
+        height: 60px;
+    }
+
+    .code {
+        display: flex;
+        justify-content: center;
+    }
+
+        .code > a {
+            text-decoration: none;
+        }
+        
+        .code > a img {
+            max-width: 160px;
+            width: auto;
+            height: 60px;
+        }
+
+@media only screen and (max-width: 600px) {
+
+    .bg-header {
+        height: auto;
+    }
+
+    .flex-row {
+        flex-direction: column;
+    }
+
+    .row {
+        width: auto;
+    }
+
+    .items-flex-start, .items-flex-end {
+        align-items: center;
+    }
+
+    .list-klan > img {
+        max-width: 120px;
+        max-height: 120px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .list-map > img {
+        max-width: 80px;
+        max-height: 80px;
+        width: 100%;
+        height: 100%;
+    }
+    
+}
