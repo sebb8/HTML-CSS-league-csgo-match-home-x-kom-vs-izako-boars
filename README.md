@@ -1,4 +1,4 @@
-# Liga-csgo-match-home-x-kom-vs-izako-boars
+# HTML-CSS-league-csgo-match-home-x-kom-vs-izako-boars
 
 DEMO jpg: 
 
